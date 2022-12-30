@@ -11,9 +11,9 @@ const third = useRef(null)
 const fourth = useRef(null)
 const Submit = useRef(null)
 
-// useEffect(()=>{
-//   first.current.focus()
-// })
+useEffect(()=>{
+  first.current.focus()
+})
 function firstKey(e){
   console.log(e.key.length)
   if(e.key.length == 1){
@@ -37,6 +37,7 @@ function fourthkey (e){
 }
 function submitdown(){
   alert("form Submitted")
+  first.current.focus()
 }
   
   return (
